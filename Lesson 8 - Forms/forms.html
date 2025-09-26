@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Form</title>
 </head>
 <body>
-    <form action="">
+    <h1>Contact Form</h1>
+    <form action="results.html" method="GET">
 
         <table border="1">
             <tr>
@@ -49,6 +50,16 @@
                 </td>
             </tr>
             <tr>
+            </tr>
+            <tr>
+                <td>Grade:</td>
+                <td>
+                    <label><input type="checkbox" name="grade" value="9th">9th</label>
+                    <label><input type="checkbox" name="grade" id="10">10th Grade</label>
+                    <label><input type="checkbox" name="grade" id="11">11th Grade</label>
+                </td>
+            </tr>
+            <tr>
                 <td><label for="date">Date:</label></td>
                 <td><input type="date" name="date" id="date"></td>
             </tr>
@@ -56,7 +67,22 @@
                 <td><label for="time">Time:</label></td>
                 <td><input type="time" name="time" id="time"></td>
             </tr>
-
+            <tr>
+                <td>Favorite Sports</td>
+                <td><label for="sports"></label>
+                <select name="sports" id="sports">
+                    <option value="" selected disabled>Select a sport</option>
+                    <option value="soccer">Soccer</option>
+                    <option value="baseball">Baseball</option>
+                    <option value="basketball">Basketball</option>
+                    <option value="volleyball">Volleyball</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                <button type="submit">Submit</button>
+                </td>
+            </tr>
 
 
 
